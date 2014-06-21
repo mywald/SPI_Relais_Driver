@@ -1,0 +1,321 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$/tmp/cgt7YEeFQ.obj
+end_init CODE 0 1 1 2 2
+reset_vec CODE 0 0 0 1 2
+config CONFIG 0 2007 2007 1 2
+$dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+cinit CODE 0 7FD 7FD 3 2
+text3 CODE 0 73B 73B 3B 2
+text2 CODE 0 776 776 40 2
+text1 CODE 0 71A 71A 21 2
+maintext CODE 0 7B6 7B6 47 2
+cstackCOMMON COMMON 1 71 71 9 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+BANK0 0020-006F 1
+BANK1 00A0-00EF 1
+BANK2 0120-0164 1
+CODE 0003-0719 2
+CODE 0800-0EFF 2
+COMMON 007A-007D 1
+CONST 0003-0719 2
+CONST 0800-0EFF 2
+EEDATA 2100-21FF 2
+ENTRY 0003-0719 2
+ENTRY 0800-0EFF 2
+IDLOC 2000-2003 2
+RAM 0020-006F 1
+RAM 00A0-00EF 1
+RAM 0120-0164 1
+SFR0 0000-001F 1
+SFR1 0080-009F 1
+SFR2 0100-011F 1
+SFR3 0180-01F0 1
+STACK 0020-006F 1
+STRCODE 0003-0719 2
+STRCODE 0800-0EFF 2
+STRING 0003-0719 2
+STRING 0800-0EFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <file name>:<line number> <address> <psect name> <class name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+"/Applications/microchip/xc8/v1.31/include/pic16f690.h":3796 0 text0 CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":54 71A text1 CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":56 71A text1 CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":57 71E text1 CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":59 722 text1 CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":60 725 text1 CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":61 727 text1 CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":62 729 text1 CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":63 72B text1 CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":64 72F text1 CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":65 731 text1 CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":66 733 text1 CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":67 737 text1 CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":69 738 text1 CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":74 73B text3 CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":75 73C text3 CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":76 740 text3 CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":77 746 text3 CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":78 749 text3 CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":79 755 text3 CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":80 757 text3 CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":82 75A text3 CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":76 767 text3 CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":85 768 text3 CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":86 775 text3 CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":40 776 text2 CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":41 776 text2 CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":42 779 text2 CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":43 782 text2 CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":44 785 text2 CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":45 78E text2 CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":46 791 text2 CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":47 79A text2 CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":48 79D text2 CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":49 7A6 text2 CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":50 7A9 text2 CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":51 7B2 text2 CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":52 7B5 text2 CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":89 7B6 maintext CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":92 7B6 maintext CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":93 7B9 maintext CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":94 7BA maintext CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":95 7BB maintext CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":96 7BC maintext CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":97 7BD maintext CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":98 7BE maintext CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":101 7BF maintext CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":102 7C2 maintext CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":103 7C6 maintext CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":104 7CA maintext CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":106 7CB maintext CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":111 7CE maintext CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":112 7D5 maintext CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":113 7DC maintext CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":114 7E3 maintext CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":115 7EA maintext CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":119 7F1 maintext CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":121 7F8 maintext CODE
+"/Users/philip/Development/mplab/SPI_Relais_Driver.X/main.c":117 7FC maintext CODE
+"/tmp/cgt3lc4QF":246 7FD cinit CODE
+"/tmp/cgt3lc4QF":249 7FD cinit CODE
+"/tmp/cgt3lc4QF":255 7FD cinit CODE
+"/tmp/cgt3lc4QF":256 7FD cinit CODE
+"/tmp/cgt3lc4QF":257 7FE cinit CODE
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_RC1 39 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+_RC6 3E 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+__S0 2008 0 ABS 0 - -
+__S1 7A 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Hintentry 2 0 CODE 0 intentry -
+__Lintentry 2 0 CODE 0 intentry -
+__CFG_BOREN$ON 0 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+display@answer 74 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+display@n 75 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+_main F6C 0 CODE 0 maintext dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+___sp 0 0 STACK 2 stack /tmp/cgt7YEeFQ.obj
+btemp 7E 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+ltemp 7E 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+ttemp 7E 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+wtemp 7E 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+start 2 0 CODE 0 init /tmp/cgt7YEeFQ.obj
+_TRISA 85 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+_TRISB 86 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+_SSPIF 63 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+_TRISC 87 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+reset_vec 0 0 CODE 0 reset_vec /tmp/cgt7YEeFQ.obj
+_ANSEL 11E 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+_SSPEN A5 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+ltemp0 7E 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+ttemp0 7E 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+wtemp0 7E 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+ltemp1 82 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+ttemp1 81 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+wtemp1 80 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+ltemp2 86 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+ttemp2 84 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+wtemp2 82 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+ltemp3 80 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+ttemp3 87 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+wtemp3 84 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+ttemp4 7F 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+wtemp4 86 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+wtemp5 88 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+wtemp6 7F 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+__Hconfig 4010 0 CONFIG 0 config -
+__Lconfig 400E 0 CONFIG 0 config -
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_spi_w E34 0 CODE 0 text1 dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+__Hfunctab 0 0 CODE 0 functab -
+__end_of_display EEC 0 CODE 0 text3 dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+__Lfunctab 0 0 CODE 0 functab -
+spi_w@ret 76 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+__Hcommon 0 0 ABS 0 common -
+__Lcommon 0 0 ABS 0 common -
+spi_w@data 73 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+___int_sp 0 0 STACK 2 stack /tmp/cgt7YEeFQ.obj
+_SSPBUF 13 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Labs1 0 0 ABS 0 abs1 -
+_SSPCON 14 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__end_of_indicateByteSent F6C 0 CODE 0 text2 dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+__Hcode 0 0 ABS 0 code -
+__Lcode 0 0 ABS 0 code -
+stackhi 0 0 ABS 0 - /tmp/cgt7YEeFQ.obj
+stacklo 0 0 ABS 0 - /tmp/cgt7YEeFQ.obj
+__Hinit 2 0 CODE 0 init -
+__Linit 2 0 CODE 0 init -
+__end_of_main FFA 0 CODE 0 maintext dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+__Htext 0 0 ABS 0 text -
+__Ltext 0 0 ABS 0 text -
+end_of_initialization FFA 0 CODE 0 cinit dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+spi_w@byte1 77 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+spi_w@byte2 78 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+_TRISBbits 86 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+_TRISCbits 87 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+__Hstrings 0 0 ABS 0 strings -
+__Lstrings 0 0 ABS 0 strings -
+__Hbank0 0 0 ABS 0 bank0 -
+__Lbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 BANK3 1 bank3 -
+__Lbank3 0 0 BANK3 1 bank3 -
+___latbits 1 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+__Hpowerup 0 0 CODE 0 powerup -
+_SSPSTAT 94 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+__Lpowerup 0 0 CODE 0 powerup -
+__ptext0 0 0 CODE 0 text0 dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+__ptext1 E34 0 CODE 0 text1 dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+__ptext2 EEC 0 CODE 0 text2 dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+__ptext3 E76 0 CODE 0 text3 dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+__Lclrtext 0 0 ABS 0 clrtext -
+__end_of__initialization FFA 0 CODE 0 cinit dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+__Hidloc 0 0 IDLOC 0 idloc -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+__Lstack 0 0 STACK 2 stack -
+__CFG_IESO$ON 0 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+__Hcinit 1000 0 CODE 0 cinit -
+__Lcinit FFA 0 CODE 0 cinit -
+_display E76 0 CODE 0 text3 dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+__size_of_main 0 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+__CFG_FOSC$EXTRCCLK 0 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+__size_of_spi_w 0 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+__CFG_PWRTE$OFF 0 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+main@answer 79 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+__Hend_init 6 0 CODE 0 end_init -
+__Lend_init 2 0 CODE 0 end_init -
+__Hreset_vec 2 0 CODE 0 reset_vec -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+_indicateByteSent EEC 0 CODE 0 text2 dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+intlevel0 0 0 CODE 0 functab /tmp/cgt7YEeFQ.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+intlevel1 0 0 CODE 0 functab /tmp/cgt7YEeFQ.obj
+intlevel2 0 0 CODE 0 functab /tmp/cgt7YEeFQ.obj
+__size_of_display 0 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+intlevel3 0 0 CODE 0 functab /tmp/cgt7YEeFQ.obj
+intlevel4 0 0 CODE 0 functab /tmp/cgt7YEeFQ.obj
+intlevel5 0 0 CODE 0 functab /tmp/cgt7YEeFQ.obj
+__end_of_spi_w E76 0 CODE 0 text1 dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__pcstackCOMMON 71 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+start_initialization FFA 0 CODE 0 cinit dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+__Hmaintext 0 0 ABS 0 maintext -
+__Lmaintext 0 0 ABS 0 maintext -
+__pmaintext F6C 0 CODE 0 maintext dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+__size_of_indicateByteSent 0 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+__initialization FFA 0 CODE 0 cinit dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+__CFG_CP$OFF 0 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+__CFG_FCMEN$ON 0 0 ABS 0 - dist/XC8_PIC16F690/debug/SPI_Relais_Driver.X.debug.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect in on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 0 0 3 2
+cinit 0 7FD FFA 3 2
+config 0 2007 400E 1 2
+cstackCOMMON 1 71 71 9 1
+maintext 0 7B6 F6C 47 2
+text2 0 776 EEC 40 2
+text3 0 73B E76 3B 2
+text1 0 71A E34 21 2
