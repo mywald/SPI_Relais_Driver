@@ -2,8 +2,8 @@ _ISR: CODE, 269 0 86
 _displayChar: CODE, 493 0 48
 _main: CODE, 41 0 228
 __initialization: CODE, 19 0 19
+_spi_write_2bytes: CODE, 355 0 69
+i1_spi_write_2bytes: CODE, 424 0 69
 _delayms: CODE, 541 0 44
-_spi_w: CODE, 355 0 69
 i1_delayms: CODE, 585 0 40
-i1_spi_w: CODE, 424 0 69
 Total: 603
