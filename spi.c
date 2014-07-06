@@ -2,8 +2,8 @@
 
 
 uint spi_write_2bytes(uint _data) {
-    uchar ret1;
-    uchar ret2;
+    uint ret1;
+    uint ret2;
     uchar byte1 = ((_data & 0xFF00) >> 8);
     uchar byte2 = _data & 0x00FF;
 
