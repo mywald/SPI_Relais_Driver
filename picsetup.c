@@ -27,8 +27,8 @@ void configureports(){
     IOCA2 = 1;            //Make RA2 to accept Interrupts
 
     //Configure RB7 as Interrupt for Switch
-    //TRISBbits.TRISB7 = 1; //RB7=IRQ-from switch
-    //IOCB7 = 1;            //Make RB7 to accept Interrupts
+    TRISBbits.TRISB7 = 1; //RB7=IRQ-from switch
+    IOCB7 = 1;            //Make RB7 to accept Interrupts
 
     RABIE = 1;            //Enable Port-A/B-Change Interrupts
     INTEDG = 0;           //Interrupt should occur on rising edge

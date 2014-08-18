@@ -1,15 +1,22 @@
-_ISR: CODE, 575 0 32
-_displayChar: CODE, 370 0 48
-_main: CODE, 307 0 63
-_configureports: CODE, 502 0 38
-_rfm12_init_receiver: CODE, 43 0 126
+_ISR: CODE, 837 0 38
+i1_rfm12_init_receiver: CODE, 992 0 21
+_handle_incoming_command: CODE, 379 0 81
+_displayChar: CODE, 529 0 62
+_rfm12_init_sender: CODE, 1013 0 21
+_rfm12_init_common: CODE, 43 0 135
+_main: CODE, 591 0 57
+_configureports: CODE, 753 0 44
+_rfm12_send_data: CODE, 178 0 118
+_rfm12_init_receiver: CODE, 944 0 27
+_rfm12_send_single_data_byte: CODE, 875 0 37
 __initialization: CODE, 19 0 21
-_spi_write_2bytes: CODE, 169 0 69
-_rfm12_read_status: CODE, 607 0 21
-i1_spi_write_2bytes: CODE, 238 0 69
-_rfm12_read_data: CODE, 674 0 8
-_delayms: CODE, 418 0 44
-i1_delayms: CODE, 462 0 40
-_rfm12_wait_for_new_stream: CODE, 660 0 14
-_handle_byte_received: CODE, 540 0 35
-Total: 628
+_spi_write_2bytes: CODE, 296 0 83
+_rfm12_read_status: CODE, 971 0 21
+i1_spi_write_2bytes: CODE, 460 0 69
+_rfm12_read_data: CODE, 1088 0 8
+_delayms: CODE, 701 0 52
+i1_delayms: CODE, 797 0 40
+_fastBlink: CODE, 648 0 53
+_rfm12_wait_for_new_stream: CODE, 1066 0 14
+_handle_byte_received: CODE, 912 0 32
+Total: 1034
